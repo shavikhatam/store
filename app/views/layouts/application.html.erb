@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyFirstStore</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <%= link_to image_tag('logo.png'), root_path, :class => 'brand' %>
+    <ul class="nav">
+      <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Team', team_path %></li>
+      <li><%= link_to 'Contacts', contacts_path %></li>
+      <li><%= link_to 'Categories', categories_path %></li>
+      <li><%= link_to 'Items', items_path %></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class='container'>
+  <div class="row">
+    <div class="span9">
+      <p id='notice'><%= notice %></p>
+      <%= yield %>
+    </div>
+    <div class="span3 sidebar">
+      <div class='sidebar-inner'>
+        <%= link_to image_tag('howtobuy.jpeg'), buy_path %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <%= link_to 'Terms', tos_path %>
+  <%= link_to 'Privacy', privacy_path %>
+</div>
+
+
+</body>
+</html>

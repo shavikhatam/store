@@ -1,0 +1,38 @@
+<h1>Товары</h1>
+
+<table class="table">
+  <tr>
+    <th>id</th>
+    <th>Название</th>
+    <th>Описнаие</th>
+    <th>Цена</th>
+    <th>категория</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% @items.each do |item| %>
+  <tr>
+    <td><%= item.id %></td>
+    <td><%= link_to item.name, item %></td>
+    <td><%= item.description %></td>
+    <td><%= item.price %></td>
+    <td>
+      <% if item.category %>
+            <%= item.category.name %>
+      <% else %>
+            нет категории
+      <% end %>
+    </td>
+    <td><%= link_to 'редактировать', edit_item_path(item) %></td>
+    <td><%= link_to 'удалить', item, method: :delete, confirm: 'are you sure?' %>
+
+    </td>
+  </tr>
+  <% end %>
+
+</table>
+
+
+<div>
+  <%= link_to 'создать товар', new_item_path %>
+</div>

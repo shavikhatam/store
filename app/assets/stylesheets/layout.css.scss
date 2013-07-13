@@ -1,0 +1,29 @@
+.navbar{
+  .navbar-inner{
+    .nav{
+      li{
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+.sidebar{
+  background: #f3f3f3;
+  .sidebar-inner{
+    padding: 20px;
+  }
+}
+
+.footer{
+  background: silver;
+  text-align: center;
+  padding: 10px;
+  font-family: verdana;
+  font-size: 10px;
+  margin-top: 20px;
+  a {
+    color: gray;
+    margin-right: 20px;
+  }
+}
