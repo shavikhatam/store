@@ -6,6 +6,7 @@ Store::Application.routes.draw do
   resources :items
   resources :comments, only: [:create, :destroy]
   resources :item_users, only: [:index, :create, :destroy]
+  resources :orders, only: [:index, :create]
 
 
   get 'about' => 'pages#about'
