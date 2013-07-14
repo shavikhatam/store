@@ -23,9 +23,15 @@
             нет категории
       <% end %>
     </td>
-    <td><%= link_to 'редактировать', edit_item_path(item) %></td>
-    <td><%= link_to 'удалить', item, method: :delete, confirm: 'are you sure?' %>
-
+    <td>
+        <% if signed_in? %>
+        <%= link_to 'редактировать', edit_item_path(item) %>
+        <% end %>
+    </td>
+    <td>
+        <% if signed_in? %>
+        <%= link_to 'удалить', item, method: :delete, confirm: 'are you sure?' %>
+         <% end %>
     </td>
   </tr>
   <% end %>
