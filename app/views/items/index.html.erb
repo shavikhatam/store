@@ -9,6 +9,7 @@
     <th>категория</th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
   <% @items.each do |item| %>
   <tr>
@@ -32,6 +33,11 @@
         <% if signed_in? %>
         <%= link_to 'удалить', item, method: :delete, confirm: 'are you sure?' %>
          <% end %>
+    </td>
+    <td>
+      <% if signed_in? %>
+          <%= link_to 'добавить в корзину', item_users_path(item_id: item.id), method: :post %>
+      <% end %>
     </td>
   </tr>
   <% end %>
