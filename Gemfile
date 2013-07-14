@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'simple_form'
 
 gem "twitter-bootstrap-rails"
+gem 'devise', '3.0.0rc'
+gem "letter_opener", :group => :development
 
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'

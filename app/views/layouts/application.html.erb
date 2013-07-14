@@ -25,12 +25,28 @@
 <div class='container'>
   <div class="row">
     <div class="span9">
-      <p id='notice'><%= notice %></p>
+
+        <% if notice %>
+            <p class='alert alert-success'><%= notice %></p>
+        <% end %>
+
+        <% if alert %>
+            <p class="alert"><%= alert %></p>
+        <% end %>
+
       <%= yield %>
     </div>
     <div class="span3 sidebar">
       <div class='sidebar-inner'>
-        <%= link_to image_tag('howtobuy.jpeg'), buy_path %>
+        <% if signed_in? %>
+           привет, <%= current_user.email %>
+           <%= link_to 'выйти', destroy_user_session_path, method: :delete %>
+        <% else %>
+           необходима авторизации
+           <p><%= link_to 'войти', new_user_session_path %>
+           <%= link_to 'регистрация', new_user_registration_path %></p>
+
+        <% end %>
       </div>
     </div>
   </div>
