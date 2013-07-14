@@ -40,8 +40,8 @@
       <div class='sidebar-inner'>
         <% if signed_in? %>
            привет, <%= current_user.email %>
-           </p> <%= link_to 'моя корзина', item_users_path %>
-           <%= link_to 'выйти', destroy_user_session_path, method: :delete %></p>
+           </p> <%= link_to 'моя корзина', item_users_path %></p>
+           <p><%= link_to 'выйти', destroy_user_session_path, method: :delete %></p>
         <% else %>
            необходима авторизации
            <p><%= link_to 'войти', new_user_session_path %>
