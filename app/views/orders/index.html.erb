@@ -4,7 +4,8 @@
 
     <h3>Заказ №<%= order.id %></h3>
     <p>Сумма заказа: <%= order.total %> руб.</p>
-
+    <%= link_to 'удалить', order, method: :delete, confirm: 'are you sure?' %>
+    <p></p>
     <table class='table'>
       <% order.item_orders.each do |io| %>
       <tr>
