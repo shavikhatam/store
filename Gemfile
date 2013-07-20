@@ -8,6 +8,7 @@ gem 'rails', '4.0.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'rails_12factor'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem 'sqlite3', :group => :development
 gem 'pg', :group => :production

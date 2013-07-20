@@ -39,7 +39,7 @@
     <div class="span3 sidebar">
       <div class='sidebar-inner'>
         <% if signed_in? %>
-           привет, <%= current_user.email %>
+           привет, <%= link_to current_user.full_name, profile_show_path %>
            </p> <%= link_to 'моя корзина', item_users_path %></p>
            </p> <%= link_to 'моя заказы', orders_path %></p>
            <p><%= link_to 'выйти', destroy_user_session_path, method: :delete %></p>
