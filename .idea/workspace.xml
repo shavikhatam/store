@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="store.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +58,7 @@
     <file path="/a.dummy" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373787842150" ignored="false" />
     <file path="/development.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373699484586" ignored="false" />
     <file path="/test.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373699505579" ignored="false" />
-    <file path="/production.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373699517323" ignored="false" />
+    <file path="/production.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1374303528577" ignored="false" />
     <file path="/20130713070224_create_items.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373699689069" ignored="false" />
     <file path="/item.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1374300721274" ignored="false" />
     <file path="/items_controller.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373720232793" ignored="false" />
@@ -105,19 +105,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="235" selection-end="235" vertical-scroll-proportion="0.19911504">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2427" selection-end="2427" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.5132743">
               <folding />
             </state>
           </provider>
@@ -155,8 +146,8 @@
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/item.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -830,16 +821,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2427" selection-end="2427" vertical-scroll-proportion="0.0">
+        <state line="9" column="24" selection-start="235" selection-end="235" vertical-scroll-proportion="0.19911504">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="235" selection-end="235" vertical-scroll-proportion="0.19911504">
+        <state line="51" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.5132743">
           <folding />
         </state>
       </provider>
