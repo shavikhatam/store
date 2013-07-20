@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>adminka</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav">
+      <li><%= link_to 'категории', admin_categories_path %></li>
+      <li><%= link_to 'товары', admin_items_path %></li>
+      <li><%= link_to 'пользователи', admin_users_path %></li>
+      <li><%= link_to 'заказы', admin_orders_path %></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class='container'>
+  <div class="row">
+    <div class="span9">
+
+        <% if notice %>
+            <p class='alert alert-success'><%= notice %></p>
+        <% end %>
+
+        <% if alert %>
+            <p class="alert"><%= alert %></p>
+        <% end %>
+
+      <%= yield %>
+    </div>
+    <div class="span3 sidebar">
+      <div class='sidebar-inner'>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -2,8 +2,11 @@
 
 
 <h1><%= @category.name %></h1>
-
 <div><%= @category.description %></div>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<% @category.items.each do |i| %>
+    <%= render 'items/element', item: i %>
+<% end %>
+
+<div class='back-button'><%= link_to 'Back', categories_path %></div>
+

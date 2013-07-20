@@ -2,11 +2,20 @@ Store::Application.routes.draw do
 
 
   devise_for :users
-  resources :categories
-  resources :items
+  resources :categories, only: [:index, :show]
+  resources :items, only: [:index, :show]
   resources :comments, only: [:create, :destroy]
   resources :item_users, only: [:index, :create, :destroy]
   resources :orders, only: [:index, :create, :destroy]
+
+  namespace :admin do
+    get '/' => 'index#index'
+    resources :categories, except: [:show]
+    resources :items, except: [:show]
+    resources :users, only: [:index]
+    resources :orders, only: [:index]
+  end
+
 
   get 'profile/show'
   get 'profile/edit'
