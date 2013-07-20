@@ -1,3 +1,86 @@
-// Place all the styles related to the Items controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.item-element {
+  border: 1px solid #f0f0f0;
+  width: 120px;
+  height: 150px;
+  float: left;
+  padding: 20px;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  .photo {
+    text-align: center;
+    height: 70px;
+    img{
+      width: 50px;
+    }
+  }
+  .name {
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .price {
+    color: green;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .buy {
+    text-align: center;
+  }
+}
+
+.add-item-control{
+  clear: both;
+}
+
+.item-name {
+  font-size: 26px;
+  font-family: verdana;
+  .category {
+    font-size: 12px;
+    color: gray;
+  }
+}
+
+.item-info {
+  height: 300px;
+  .photo{
+    float: left;
+    width: 300px;
+  }
+  .info {
+    width: 500px;
+    height: 200px;
+    float: left;
+    .description {
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .buy {
+
+    }
+  }
+}
+
+.comments {
+  clear: both;
+  margin-top: 20px;
+  .comment-element {
+    margin-bottom: 10px;
+    .date {
+      color: gray;
+      float: left;
+      margin-right: 10px;
+    }
+    .delete {
+      float: left;
+    }
+    .message {
+      clear: both;
+    }
+  }
+}

@@ -1,52 +1,19 @@
 <h1>Товары</h1>
 
-<table class="table">
-  <tr>
-    <th>id</th>
-    <th></th>
-    <th>Название</th>
-    <th>Описнаие</th>
-    <th>Цена</th>
-    <th>категория</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
   <% @items.each do |item| %>
-  <tr>
-    <td><%= item.id %></td>
-    <td><%= image_tag item.image.url(:thumb) %></td>
-    <td><%= link_to item.name, item %></td>
-    <td><%= item.description %></td>
-    <td><%= item.price %></td>
-    <td>
-      <% if item.category %>
-            <%= item.category.name %>
-      <% else %>
-            нет категории
-      <% end %>
-    </td>
-    <td>
-        <% if signed_in? %>
-        <%= link_to 'редактировать', edit_item_path(item) %>
-        <% end %>
-    </td>
-    <td>
-        <% if signed_in? %>
-        <%= link_to 'удалить', item, method: :delete, confirm: 'are you sure?' %>
-         <% end %>
-    </td>
-    <td>
+    <div class='item-element'>
+      <div class='photo'><%= link_to image_tag(item.image.url(:thumb)), item %></div>
+      <div class='name'><%= link_to item.name, item %></div>
+      <div class='price'><%= item.price %> руб.</div>
       <% if signed_in? %>
-          <%= link_to 'добавить в корзину', item_users_path(item_id: item.id), method: :post %>
+        <div class='buy'>
+          <%= link_to 'в корзину', item_users_path(item_id: item.id), method: :post, class: 'btn' %>
+        </div>
       <% end %>
-    </td>
-  </tr>
+    </div>
   <% end %>
 
-</table>
 
-
-<div>
-  <%= link_to 'создать товар', new_item_path %>
+<div class='add-item-control'>
+  <%= link_to 'создать товар', new_item_path, class: 'btn' %>
 </div>

@@ -1,34 +1,29 @@
-<h1><%= @item.name %></h1>
-
-<div><%= image_tag @item.image.url(:medium) %></div>
-
-<div>
-  <%= @item.description %>
-</div>
-
-<div>Цена: <%= @item.price %> руб.</div>
-
-<div>
+<div class='item-name'>
+  <p><%= @item.name %></p>
   <% if @item.category%>
-        Категория: <%= @item.category.name %>
-  <% else %>
-      нет категории
+    <div class='category'><%= @item.category.name %></div>
   <% end %>
+</div>
 
+<div class='item-info'>
+  <div class='photo'><%= image_tag @item.image.url(:medium) %></div>
+  <div class='info'>
+    <div class="description"><%= @item.description %></div>
+    <div class="price">Цена: <%= @item.price %> руб.</div>
+    <div class="buy"><%= link_to 'в корзину', item_users_path(item_id: @item.id), method: :post, class: 'btn btn-large btn-success' %></div>
+  </div>
 </div>
 
 
-
-
-<div>
-  <h3>Добавить комментарий</h3>
+<div class="comments">
+  <h3>Обсуждение</h3>
   <%= render 'comments/form' %>
-</div>
 
-
-  <h3>Список комментариев</h3>
   <% @item.comments.each do |comment| %>
-  <div><%= comment.created_at %></div>
-  <div><%= comment.message %></div>
-  <div><%= link_to 'удалить', comment, method: :delete, confirm: 'are u sure?' %> </div>
+  <div class="comment-element">
+    <div class="date"><%= comment.created_at.strftime('%d.%m.%Y') %></div>
+    <div class="delete"><%= link_to 'удалить', comment, method: :delete, confirm: 'are u sure?' %> </div>
+    <div class="message"><%= comment.message %></div>
+  </div>
 <% end %>
+</div>

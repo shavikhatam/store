@@ -1,3 +1,24 @@
-// Place all the styles related to the Categories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.category-element {
+  border: 2px solid silver;
+  padding: 10px;
+  width: 150px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  float: left;
+  .category-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: verdana;
+    ;
+  }
+  .category-desc {
+    font-size: 10px;
+    overflow: hidden;
+  }
+}
+
+.create-category-button {
+  clear: both;
+  padding-top: 20px;
+}
