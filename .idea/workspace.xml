@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/rails" afterPath="$PROJECT_DIR$/bin/rails" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="store.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +54,7 @@
     <file path="/footer_controller.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373637052323" ignored="false" />
     <file path="$PROJECT_DIR$/../faq/app/views/footer/tos.html.erb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373637093160" ignored="false" />
     <file path="$PROJECT_DIR$/../faq/app/views/footer/privacy.html.erb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373637115155" ignored="false" />
-    <file path="/Gemfile" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1374304251934" ignored="false" />
+    <file path="/Gemfile" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1374305147815" ignored="false" />
     <file path="/a.dummy" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373787842150" ignored="false" />
     <file path="/development.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373699484586" ignored="false" />
     <file path="/test.rb" changelist="d8b2c88b-0a33-400f-8247-a2cfdcf07c47" time="1373699505579" ignored="false" />
@@ -117,7 +117,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="43" selection-end="43" vertical-scroll-proportion="0.044247787">
+            <state line="9" column="20" selection-start="175" selection-end="175" vertical-scroll-proportion="0.19911504">
               <folding />
             </state>
           </provider>
@@ -285,20 +285,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,6 +304,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,7 +670,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="803" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -854,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="43" selection-end="43" vertical-scroll-proportion="0.044247787">
+        <state line="9" column="20" selection-start="175" selection-end="175" vertical-scroll-proportion="0.19911504">
           <folding />
         </state>
       </provider>
