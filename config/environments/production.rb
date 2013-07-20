@@ -62,6 +62,6 @@ Store::Application.configure do
   config.active_support.deprecation = :notify
 
   config.eager_load = true
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'arcane-citadel-3080.herokuapp.com' }
 
 end
