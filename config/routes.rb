@@ -17,6 +17,11 @@ Store::Application.routes.draw do
   end
 
 
+  get 'robokassa/success'
+  get 'robokassa/fail'
+  post 'robokassa/paid'
+
+
   get 'profile/show'
   get 'profile/edit'
   put 'profile/save'

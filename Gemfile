@@ -23,6 +23,8 @@ gem "letter_opener", :group => :development
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
+gem 'activemerchant', :require => 'active_merchant'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

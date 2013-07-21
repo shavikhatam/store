@@ -59,3 +59,8 @@ module Store
     config.assets.version = '1.0'
   end
 end
+
+
+ROBOKASSA_LOGIN = 'shavik123456'
+ROBOKASSA_PASS_1 = 'qwer1234'
+ROBOKASSA_PASS_2 = 'asdf0987'
